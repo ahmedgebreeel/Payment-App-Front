@@ -1,0 +1,33 @@
+.landing-page {
+    text-align: center;
+    margin-top: 50px;
+    /* border: #333 solid 1px; */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666; /* Slightly lighter text color */
+  }
+  
+  button {
+    font-size: 1.2rem;
+    background-color: #007bff; /* Primary color for button */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
