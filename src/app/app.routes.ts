@@ -1,14 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { FormComponent } from './components/form/form.component';
-import { SuccessComponent } from './components/success/success.component';
-import { CancelComponent } from './components/cancel/cancel.component';
+
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    // {path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)}
-    {path:"home", component: HomeComponent},
-    {path:"form", component: FormComponent},
-    {path:"success", component: SuccessComponent},
-    {path:"cancel", component: CancelComponent}
+    {path:"home", loadComponent: ()=> import('./components/home/home.component').then(c=>c.HomeComponent)},
+    {path:"form", loadComponent: ()=> import('./components/form/form.component').then(c=>c.FormComponent)},
+    {path:"success", loadComponent: ()=> import('./components/success/success.component').then(c=>c.SuccessComponent)},
+    {path:"cancel", loadComponent: ()=> import('./components/cancel/cancel.component').then(c=>c.CancelComponent)}
 ];
