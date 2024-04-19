@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cancel-message {
+    max-width: 400px; 
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .cancel-message h1 {
+    color: #d9534f; 
+  }
+  
+  .cancel-message p {
+    color: #555; 
+    margin-bottom: 20px; 
+  }
+  
+  .cancel-message button {
+    background-color: #d9534f; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .cancel-message button:hover {
+    background-color: #c9302c; 
+  }
+  
+  .cancel-message button:active {
+    transform: translateY(2px); 
+  }
+  
